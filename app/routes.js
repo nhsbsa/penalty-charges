@@ -431,6 +431,10 @@ router.get(/dwp-new-handler/, function (req, res) {
 
     router.get(/claim-isa/, function (req, res) {
       if (req.query.details == 'yes') {
+        var benefits = "Income Support";
+  var topCat = "Income Support";
+
+        content.updateContent("Income Support");
         res.redirect('dwp-check-name');
       }
       else if (req.query.details == 'no') {

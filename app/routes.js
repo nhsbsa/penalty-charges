@@ -451,4 +451,15 @@ router.get(/dwp-new-handler/, function (req, res) {
           });
         });
 
+        //router.get(/dwp-valid-uc/, function (req, res) {
+        //  if (req.query.details == 'yes') {
+        //    res.redirect('dwp-check-name-uc');
+        //  }
+          //else if (req.query.details == 'no') {
+           // res.redirect('dwp-did-you-bsa');
+         // }
+       // });
+        
+    
+
 module.exports = router;

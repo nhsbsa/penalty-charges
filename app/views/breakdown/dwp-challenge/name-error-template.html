@@ -1,0 +1,275 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  NHS Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    <div class="column-full">
+      <div class="phase-banner">
+          <p>
+            <strong class="phase-tag">BETA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+          </p>
+        </div>
+        <a class="link-back" href="">Back</a>
+    </div>
+  </div>
+  <div class="grid-row">
+  <div class="column-two-thirds">
+      <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading">There is a
+          problem</h2>
+        <ul id="error-summary-list" class="error-summary-list">
+      <li class="error-message" id="error-summary-country-must-not-be-null">
+        <a href="#country-england">
+          Enter your first name 
+        </a>
+      </li>
+      <li class="error-message" id="error-summary-country-must-not-be-null">
+        <a href="#country-england">
+          Enter your last name
+        </a>
+      </li>
+        </ul>
+      </div>
+     </div>
+  </div>
+    
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="heading-group">
+        <p>This is a template</p>
+        <h1 class="heading-large">
+          This is an example template</h1>
+      </div>
+      <fieldset class="nhsuk-fieldset">
+     
+      
+      
+      <div class="nhsuk-form-group nhsuk-form-group--error">
+        <label class="nhsuk-label" for="first-name">
+          First name 
+        </label>
+        <span class="error-message" id="first-name-error"> 
+          <span class="visually-hidden">Error:</span> Enter your first name
+        </span>
+        <input class="nhsuk-input nhsuk-input--width-20 nhsuk-input--error" id="first-name" name="firstName" type="text" aria-describedby="first-name-error" autocomplete="off">
+      </div>
+      
+      
+          
+      
+      <div class="nhsuk-form-group nhsuk-form-group--error">
+        <label class="nhsuk-label" for="last-name">
+          Last name (this is your surname or family name)
+        </label>
+        <span class="error-message" id="last-name-error">
+          <span class="visually-hidden">Error:</span> Enter your last name 
+        </span>
+        <input class="nhsuk-input nhsuk-input--width-20 nhsuk-input--error" id="last-name" name="lastName" type="text" aria-describedby="last-name-error" autocomplete="off">
+      </div>
+      
+      
+        </fieldset>
+</fieldset>
+        </fieldset>
+      <div class="form-group">
+        <input class="button" type="submit"  value="Next">
+      </div>
+        
+      <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
+
+      </form>
+      
+    </div>
+    
+  </div>
+  <style>
+    .error-summary {
+margin-bottom: 0px;
+    }
+  
+  .nhsuk-form-group--error {
+    border-left: 4px solid #d5281b;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+.form-label, #lineone{
+padding-left: 0px
+}
+.form-control , #lineone, #linetwo, #town {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80%;
+    height: 40px;
+    height: 4rem;
+    margin-top: 0;
+    padding: 5px;
+    border: 2px solid #d5281b;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none
+}
+.form-control , #linetwo {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80%;
+    height: 40px;
+    height: 4rem;
+    margin-top: 0;
+    padding: 5px;
+    border: 4px solid #d5281b;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none
+}
+.form-control , #town {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 60%;
+    height: 40px;
+    height: 4rem;
+    margin-top: 0;
+    padding: 5px;
+    border: 2px solid #d5281b;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none
+    
+}
+
+@media print {
+    .govuk-input {
+        font-family:sans-serif
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .govuk-input {
+        font-size: 19px;
+        font-size: 1.1875rem;
+        line-height:1.3157894737
+    }
+}
+
+@media print {
+    .govuk-input {
+        font-size: 14pt;
+        line-height:1.15
+    }
+}
+
+.govuk-input:focus {
+    outline: 3px solid #fd0;
+    outline-offset: 0;
+    -webkit-box-shadow: inset 0 0 0 2px;
+    box-shadow:inset 0 0 0 2px
+}
+
+
+
+.nhsuk-input--width-20 {
+    max-width: 41ex;
+}
+.nhsuk-input--error, #lineone {
+    border: 4px solid #d5281b;
+}
+
+.nhsuk-input {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+}
+.nhsuk-input {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid #4c6272;
+    border-radius: 0;
+    box-sizing: border-box;
+    height: 40px;
+    margin-top: 0;
+    padding: 4px;
+    width: 100%;
+}
+.nhsuk-input--width-20 {
+    max-width: 41ex;
+}
+.nhsuk-input--error, #town {
+    border: 4px solid #d5281b;
+}
+
+.nhsuk-input {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+}
+.nhsuk-input {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid #4c6272;
+    border-radius: 0;
+    box-sizing: border-box;
+    height: 40px;
+    margin-top: 0;
+    padding: 4px;
+    width: 100%;
+}
+.nhsuk-input--width-20 {
+    max-width: 41ex;
+}
+.nhsuk-input--error, #postcode {
+    border: 4px solid #d5281b;
+}
+
+.nhsuk-input {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+}
+  </style>
+   
+</main>
+
+{% endblock %}

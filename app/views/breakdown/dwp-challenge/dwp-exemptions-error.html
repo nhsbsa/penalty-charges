@@ -24,14 +24,30 @@
   <div class="grid-row">
       
     <div class="column-two-thirds">
+      <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading">There is a
+          problem</h2>
+        <ul id="error-summary-list" class="error-summary-list">
+      <li class="error-message" id="error-summary-country-must-not-be-null">
+        <a href="#country-england">
+          Select the type on benefit you were claiming, or select ‘No, none of these’  
+        </a>
+      </li>
     
+  
+          
+        </ul>
+      </div>
       <div class="heading-group">
         <p>Challenge an enquiry letter</p>
         <h1 class="heading-large">
           Were you claiming any of these benefits (or named on them) between 1 November and 30 November 2017?
         </h1>
       </div>
-            
+      <div class="form-group error">
+
+        <div>
+      <span class="error-message" id="error-country-must-not-be-null">Select the type on benefit you were claiming, or select ‘No, none of these’</span>
       <form action="dwp-exemptions-handler" method="get" class="form">
           <div class="form-group">
         <div class="form-item-wrapper">
@@ -90,7 +106,9 @@
                   
           </div>
         </div>
-
+</form>   
+        </div>
+      </div>
         <div class="form-item-wrapper">
           <div class="form-group">
             <a class="button" href="../dwp-challenge/dwp-check-name-uc.html">Next</a>

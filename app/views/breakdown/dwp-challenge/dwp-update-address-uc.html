@@ -28,37 +28,47 @@
       <div class="heading-group">
         <p>Challenge an enquiry letter</p>
         <h1 class="heading-large">
-          What was your address when you claimed universal credit? </h1>
+          What was your address when you claimed Universal Credit? </h1>
       </div>
       
 
       <form action="update-address-handler" method="get" class="form">
 
-      <div class="form-group">
-        <label class="form-label" for="lineone">
-          Building and street
-        </label>
-        <input class="form-control" id="lineone" name="lineone" type="text">
-      </div>
-        
-      <div class="form-group">
-        <input class="form-control" id="linetwo" name="linetwo" type="text">
-      </div>
+        <div class="form-group">
+          <label class="form-label" for="lineone">
+            Address line 1
+          </label>
+          <input class="form-control" id="lineone" name="lineone" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="linetwo">
+            Address line 2 (optional)
+          </label>
+          <input class="form-control" id="linetwo" name="linetwo" type="text">
+        </div>
+       
+  
+        <div class="form-group">
+          <label class="form-label" for="town">
+            Town or city
+          </label>
+          <input class="form-control" id="town" name="town" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="county">
+            County (optional)
+          </label>
+          <input class="form-control" id="town" name="town" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="postcode">
+            Postcode
+          </label>
+          <input class="form-control" name="postcode" id="postcode" value="{{postcode}}" type="text">
+        </div>
 
-      <div class="form-group">
-        <label class="form-label" for="town">
-          Town or city
-        </label>
-        <input class="form-control" id="town" name="town" type="text">
-      </div>
-        
-      <div class="form-group">
-        <label class="form-label" for="postcode">
-          Postcode
-        </label>
-        <input class="form-control" name="postcode" id="postcode" value="{{postcode}}" type="text">
-      </div>
-
+</fieldset>
+        </fieldset>
       <div class="form-group">
         <input class="button" type="submit"  value="Next">
       </div>
@@ -70,7 +80,144 @@
     </div>
     
   </div>
+  <style>
   
+
+.form-control , #lineone {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80%;
+    height: 40px;
+    height: 4rem;
+    margin-top: 0;
+    padding: 5px;
+    border: 2px solid #0b0c0c;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none
+}
+.form-control , #linetwo {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80%;
+    height: 40px;
+    height: 4rem;
+    margin-top: 0;
+    padding: 5px;
+    border: 2px solid #0b0c0c;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none
+}
+.form-control , #town {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 60%;
+    height: 40px;
+    height: 4rem;
+    margin-top: 0;
+    padding: 5px;
+    border: 2px solid #0b0c0c;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none
+}
+.form-control , #county {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 60%;
+    height: 40px;
+    height: 4rem;
+    margin-top: 0;
+    padding: 5px;
+    border: 2px solid #0b0c0c;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none
+}
+.form-control , #postcode {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40px;
+    height: 4rem;
+    margin-top: 0;
+    padding: 5px;
+    border: 2px solid #0b0c0c;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none
+}
+@media print {
+    .govuk-input {
+        font-family:sans-serif
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .govuk-input {
+        font-size: 19px;
+        font-size: 1.1875rem;
+        line-height:1.3157894737
+    }
+}
+
+@media print {
+    .govuk-input {
+        font-size: 14pt;
+        line-height:1.15
+    }
+}
+
+.govuk-input:focus {
+    outline: 3px solid #fd0;
+    outline-offset: 0;
+    -webkit-box-shadow: inset 0 0 0 2px;
+    box-shadow:inset 0 0 0 2px
+}
+
+  </style>
+   
 </main>
 
 {% endblock %}

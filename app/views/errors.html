@@ -1,0 +1,227 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay or challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<!-- bsa table style overrides -->
+<style>
+   table tr td {
+   border: none;
+   display: table-cell;
+   vertical-align: text-top;
+   padding: 2rem 3rem 0 0;
+   }
+   table tr td:nth-child(1) {
+   width: 30%;
+   }
+   table tr td:nth-child(2) {
+   padding-right: 3rem;
+   width: 30%; 
+   }
+   table tr td:nth-child(3) {
+   padding-right: 3rem;
+   }
+</style>
+<main id="content" role="main">
+   <p>
+      <a href="index"> Back to all prototypes</a>
+   </p>
+   <div class="heading-group">
+      <p>Challenge a Penalty Charge Notice Prototype</p>
+      <h1 class="heading-xlarge">
+        All error messages
+      </h1>
+   </div>
+   <div class="panel panel-border-narrow">
+      <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly.</p>
+   </div>
+   
+      <p style="color: rgb(8, 2, 2);">Please note that the pages marked * are not longer used in the service and are for reference only.</p>
+   </div>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th> DECS enquiry errors</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/address-error-template.html">address error</a>
+            </td>
+            <td>What was your address when you claimed universal credit</td>
+            <td>/error-pages/address-error-template</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/dwp-check-address-error">check address error</a>
+            </td>
+            <td> Was this your address when you had a Universal Credit benefit? </td>
+            <td>/error-pages/dwp-check-address-error</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/dwp-exemptions-error">dwp exemption error</a>
+            </td>
+            <td>Were you claiming any of these benefits (or named on them) between 1 November and 30 November 2017?</td>
+            <td>/error-pages/dwp-exemptions-error</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/were-you-claiming-isa-error">were you clamining isa error</a>
+            </td>
+            <td>Were you claiming Income Support or income-related Employment and Support Allowance (or named on a claim) between 1 November and 30 November 2017?</td>
+            <td>/breakdown/error-pages/were-you-claiming-isa-error</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/dwp-check-name-uc-error">check name error</a>
+            </td>
+            <td>Is this how your name was written on your Universal Credit benefit?</td>
+            <td>/breakdown/error-pages/dwp-check-name-error</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/name-error-template">name error</a>
+            </td>
+            <td>How was your name written on your Universal Credit benefit?</td>
+            <td>/breakdown/error-pages/name-error-template</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/dwp-check-dob-error">check dob error</a>
+            </td>
+            <td>Is this your date of birth??</td>
+            <td>/breakdown/error-pages/dwp-check-dob-error</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/dob-error-template">dob error</a>
+            </td>
+            <td>What is your date of birth?</td>
+            <td>/breakdown/error-pages/dob-error-template</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th>PECS enquiry errors</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/dwp-exemptions-error">dwp exemption error</a>
+            </td>
+            <td>Were you claiming any of these benefits (or named on them) between 1 November and 30 November 2017?</td>
+            <td>/error-pages/dwp-exemptions-error</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/were-you-claiming-isa-error">were you clamining isa error</a>
+            </td>
+            <td>Were you claiming Income Support or income-related Employment and Support Allowance (or named on a claim) between 1 November and 30 November 2017?</td>
+            <td>/breakdown/error-pages/were-you-claiming-isa-error</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/dwp-check-name-uc-error">check name error</a>
+            </td>
+            <td>Is this how your name was written on your Universal Credit benefit?</td>
+            <td>/breakdown/error-pages/dwp-check-name-error</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/name-error-template">name error</a>
+            </td>
+            <td>How was your name written on your Universal Credit benefit?</td>
+            <td>/breakdown/error-pages/name-error-template</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/dwp-check-dob-error">check dob error</a>
+            </td>
+            <td>Is this your date of birth??</td>
+            <td>/breakdown/error-pages/dwp-check-dob-error</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/dob-error-template">dob error</a>
+            </td>
+            <td>What is your date of birth?</td>
+            <td>/breakdown/error-pages/dob-error-template</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/address-error-template.html">address error</a>
+            </td>
+            <td>What was your address when you claimed universal credit</td>
+            <td>/error-pages/address-error-template</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/error-pages/dwp-check-address-error">check address error</a>
+            </td>
+            <td> Was this your address when you had a Universal Credit benefit? </td>
+            <td>/error-pages/dwp-check-address-error</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</main>
+{% endblock %}

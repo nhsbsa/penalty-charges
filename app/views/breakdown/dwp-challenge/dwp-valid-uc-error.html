@@ -60,6 +60,18 @@
   </div>
   
   <div class="grid-row">
+    <div class="column-two-thirds">
+      <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
+        <h2 class="heading-medium error-summary-heading" id="error-summary-heading">There is a
+          problem</h2>
+        <ul id="error-summary-list" class="error-summary-list">
+      <li class="error-message" id="error-summary-country-must-not-be-null">
+        <a href="#country-england">
+          Select Yes or No in answer to this question
+        </a>
+      </li>
+    </ul>
+ </div> 
       
     <div class="column-two-thirds"><div class="heading-group"> <h1 class="heading-large">
           Did you have a valid Universal Credit claim (or were you named on one) and meet the criteria between 1 November and 30 November 2017?
@@ -70,18 +82,25 @@
       
       <br>
       
-      <form action="check-address" method="get" class="form">
-        <div class="govuk-form-group govuk-form-group--error">
-          <fieldset class="govuk-fieldset" aria-describedby="nationality-hint nationality-error" 
-          < id="nationality-error" class="govuk-error-message">
-            <span class="govuk-error-message">Select yes if had a valid Universal Credit claim and met the criteria</span>
-            </p>
-            
+     
           <div class="form-group">
 
             <fieldset class="inline">
               <legend class="visually-hidden">
               </legend>
+              <div class="form-group">
+
+                <fieldset class="inline">
+                  <legend class="visually-hidden">
+                  </legend>
+                  <div class="form-group error">
+    
+                    <div>
+                  <span class="error-message" id="error-country-must-not-be-null">Select Yes or No in answer to this question</span>
+                  <form action="dwp-exemptions-handler" method="get" class="form">
+                      <div class="form-group">
+                    <div class="form-item-wrapper">
+                 </div>
 
               <div class="multiple-choice">
                 <input id="yes" type="radio" name="details" value="yes">

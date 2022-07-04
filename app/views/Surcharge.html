@@ -1,0 +1,459 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay or challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<!-- bsa table style overrides -->
+<style>
+   table tr td {
+   border: none;
+   display: table-cell;
+   vertical-align: text-top;
+   padding: 2rem 3rem 0 0;
+   }
+   table tr td:nth-child(1) {
+   width: 30%;
+   }
+   table tr td:nth-child(2) {
+   padding-right: 3rem;
+   width: 30%; 
+   }
+   table tr td:nth-child(3) {
+   padding-right: 3rem;
+   }
+</style>
+<main id="content" role="main">
+   <p>
+      <a href="index"> Back to all prototypes</a>
+   </p>
+   <div class="heading-group">
+      <p>Challenge a Penalty Charge Notice Prototype</p>
+      <h1 class="heading-xlarge">
+        All error messages
+      </h1>
+   </div>
+   <div class="panel panel-border-narrow">
+      <p style="color: red;">Don't use any of this prototype code on production services, it doesn't adhere to development standards and is hacked together quickly and roughly.</p>
+   </div>
+   
+     
+   </div>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th>PECS surcharge</th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right">JIRA ticket number</th>
+         </tr> 
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-examples-pcn.html">We need proof</a>
+            </td>
+            <td>We need proof that you were entitled to claim free prescriptions between 1 November and 30 November 2017</td>
+            <td>/breakdown/surcharge/dwp-examples-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/uc-start.html">UC start</a>
+            </td>
+            <td>Respond to your letter</td>
+            <td>/breakdown/surcharge/uc-start</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-examples-pcn.html">Dwp exemption pcn</a>
+            </td>
+            <td>Were you claiming any of these benefits (or named on them) between 1 November and 30 November 2017?</td>
+            <td>/breakdown/surcharge/dwp-examples-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-were-you-claiming-isa-pcn.html">Were you claimning isa pcn</a>
+            </td>
+            <td>Were you claiming Income Support or income-related Employment and Support Allowance (or named on a claim) between 1 November and 30 November 2017?</td>
+            <td>/breakdown/surcharge/dwp-were-you-claiming-isa-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-check-name-uc-pcn.html">check name UC</a>
+            </td>
+            <td>Is this how your name was written on your Universal Credit benefit?</td>
+            <td>/breakdown/surcharge/dwp-check-name-uc-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-update-name-pcn.html">Update name pcn</a>
+            </td>
+            <td>How was your name written on your Universal Credit benefit?</td>
+            <td>/breakdown/Surcharge/dwp-update-name-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-check-dob-pcn.html">Check dob pcn</a>
+            </td>
+            <td>Is this your date of birth??</td>
+            <td>/breakdown/surcharge/dwp-check-dob-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-update-dob-pcn.html">Update dob pcn</a>
+            </td>
+            <td>What is your date of birth?</td>
+            <td>/breakdown/surcharge/dwp-update-dob-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-check-address-pcn.html">Check address PCN</a>
+            </td>
+            <td>Was this your address when you had a Universal Credit benefit?</td>
+            <td>/breakdown/surcharge/dwp-check-address-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-update-address-uc-pcn.html">Update address PCN</a>
+            </td>
+            <td>What was your address when you claimed Universal Credit?</td>
+            <td>/breakdown/surcharge/dwp-check-address-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-check-your-answers-pcn.html">Check your answers PCN</a>
+            </td>
+            <td>Check your personal details are correct</td>
+            <td>/breakdown/surcharge/dwp-check-your-address-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-exemption-found-uc-info-pcn.html">Exemption found info UC</a>
+            </td>
+            <td>An exemption has been found</td>
+            <td>/breakdown/surcharge/dwp-exemption-found-uc-info-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-exemption-found-pcn.html">Exemption found PCN</a>
+            </td>
+            <td>An exemption has been found</td>
+            <td>/breakdown/surcharge/dwp-exemption-found-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-died-notified-pcn.html">Died notification PCN</a>
+            </td>
+            <td>This case has been closed</td>
+            <td>/breakdown/surcharge/dwp-died-notified-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-we-need-proof-uc-pcn.html">We need proof uc PCN</a>
+            </td>
+            <td>We need proof that you were named on a Universal Credit claim and meet the required thresholds between 1 November and 30 November 2017.</td>
+            <td>/breakdown/surcharge/dwp-we-need-proof-uc-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-examples-pcn.html">We need proof</a>
+            </td>
+            <td>We need proof that you were entitled to claim free prescriptions between 1 November and 30 November 2017</td>
+            <td>/breakdown/surcharge/dwp-examples-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/asking-for-a-review-pecs-PCN.html">Asking for a review PECS</a>
+            </td>
+            <td>Who can ask for a Penalty Charge Notice review?</td>
+            <td>/breakdown/surcharge/asking-for-a-review-pecs-PCN</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-review-pecs-pcn.html">Asking for a review</a>
+            </td>
+            <td>Asking for a review</td>
+            <td>/breakdown/surcharge/dwp-review-pecs-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/pay-your-pcn.html">Pay your PCN</a>
+            </td>
+            <td>How would you like to pay your penalty charge?</td>
+            <td>/breakdown/surcharge/pay-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <table class="check-table" id="review-table-one">
+      <thead>
+         <tr>
+            <th>DECS surcharge </th>
+            <th>Page Title</th>
+            <th>URL</th>
+            <th class="right" style="padding-right:0px;">JIRA ticket number</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/uc-start.html">UC start</a>
+            </td>
+            <td>Respond to your letter</td>
+            <td>/breakdown/surcharge/uc-start</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/view-enquiry-challenge-decs.html">View enquiry challenge</a>
+            </td>
+            <td>Penalty Charge Notice 10192699012</td>
+            <td>/breakdown/surcharge/view-enquiry-challenge-decs</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-examples-pcn-decs.html">Dwp examples pcn decs</a>
+            </td>
+            <td>We need proof that you were entitled to claim free dental treatment between 1 November and 30 November 2017</td>
+            <td>/breakdown/surcharge/dwp-examples-pcn-decs</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-examples-pcn.html">Dwp exemptions pcn</a>
+            </td>
+            <td>Were you claiming any of these benefits (or named on them) between 1 November and 30 November 2017?</td>
+            <td>/breakdown/surcharge/dwp-examples-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-were-you-claiming-isa-pcn.html">Were you claimning isa pcn</a>
+            </td>
+            <td>Were you claiming Income Support or income-related Employment and Support Allowance (or named on a claim) between 1 November and 30 November 2017?</td>
+            <td>/breakdown/surcharge/dwp-were-you-claiming-isa-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-check-name-uc-pcn.html">check name UC</a>
+            </td>
+            <td>Is this how your name was written on your Universal Credit benefit?</td>
+            <td>/breakdown/surcharge/dwp-check-name-uc-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-update-name-pcn.html">Update name pcn</a>
+            </td>
+            <td>How was your name written on your Universal Credit benefit?</td>
+            <td>/breakdown/Surcharge/dwp-update-name-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-check-dob-pcn.html">Check dob pcn</a>
+            </td>
+            <td>Is this your date of birth??</td>
+            <td>/breakdown/surcharge/dwp-check-dob-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-update-dob-pcn.html">Update dob pcn</a>
+            </td>
+            <td>What is your date of birth?</td>
+            <td>/breakdown/surcharge/dwp-update-dob-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-check-address-pcn.html">Check address PCN</a>
+            </td>
+            <td>Was this your address when you had a Universal Credit benefit?</td>
+            <td>/breakdown/surcharge/dwp-check-address-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-check-your-answers-pcn.html">Check your answers PCN</a>
+            </td>
+            <td>Check your personal details are correct</td>
+            <td>/breakdown/surcharge/dwp-check-your-address-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-exemption-found-uc-info-pcn.html">Exemption found info UC</a>
+            </td>
+            <td>An exemption has been found</td>
+            <td>/breakdown/surcharge/dwp-exemption-found-uc-info-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-exemption-found-pcn.html">Exemption found PCN</a>
+            </td>
+            <td>An exemption has been found</td>
+            <td>/breakdown/surcharge/dwp-exemption-found-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-update-address-uc-pcn.html">Update address PCN</a>
+            </td>
+            <td>What was your address when you claimed Universal Credit?</td>
+            <td>/breakdown/surcharge/dwp-check-address-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-died-notified-pcn.html">Died notification PCN</a>
+            </td>
+            <td>This case has been closed</td>
+            <td>/breakdown/surcharge/dwp-died-notified-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-we-need-proof-uc-pcn-decs.html">We need proof uc pcn DECS</a>
+            </td>
+            <td>We need proof that you were named on a Universal Credit claim and meet the required thresholds between 1 November and 30 November 2017.</td>
+            <td>/breakdown/surcharge/dwp-we-need-proof-uc-pcn-decs</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-examples-pcn-decs.html">We need proof uc DECS</a>
+            </td>
+            <td>We need proof that you were entitled to claim free dental treatment between 1 November and 30 November 2017</td>
+            <td>/breakdown/surcharge/dwp-examples-pcn-decs</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/asking-for-a-review-decs-PCN.html">PCN review</a>
+            </td>
+            <td>Who can ask for a Penalty Charge Notice review?</td>
+            <td>/breakdown/surcharge/asking-for-a-review-decs-PCN</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/dwp-review-decs-pcn.html">Asking for a review</a>
+            </td>
+            <td>Asking for a review</td>
+            <td>/breakdown/surcharge/dwp-review-decs-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <a href="breakdown/surcharge/pay-your-pcn.html">Pay your PCN</a>
+            </td>
+            <td>How would you like to pay your penalty charge?</td>
+            <td>/breakdown/surcharge/pay-your-pcn</td>
+            <td class="right">
+               <a href="https://bsa2468.atlassian.net/browse/PA233-729"></a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</main>
+{% endblock %}

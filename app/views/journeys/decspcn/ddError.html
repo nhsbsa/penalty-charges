@@ -1,0 +1,76 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Pay a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-two-thirds">
+         <div class="heading-group">
+            <p>Pay an NHS Penalty Charge Notice</p>
+            <h1 class="heading-large">You are unable to set up a Direct Debit online</h1>
+         </div>
+      </div>
+      <div class="column-two-thirds">
+         <div class="text">
+            <p>
+               To set up a Direct Debit online, you must confirm that you are:
+            </p>
+            <ul class="list list-bullet">
+               <li>using your own bank account</li>
+               <li>the only person required to authorise debits on this account</li>
+            </ul>
+            <details>
+               <summary>If you cannot confirm this and need to contact us</summary>
+               <div class="panel panel-border-narrow">
+                  <p>You will need your reference number. This is in the top left-hand corner of your Penalty Charge Notice letter.</p>
+                  <h3 class="heading-small">For prescriptions</h3>
+                 <!--  <ul class="list list-bullet">
+                     <li>Call us on 0300 330 9291 (this call will be charged at a local rate). Lines are available Monday to Friday from 8am to 6pm and Saturday from 9am to 3pm.</li>
+                     <li>Email us at <a href="mailto:nhsbsa.pecs@nhsbsa.nhs.uk">nhsbsa.pecs@nhsbsa.nhs.uk</a></li>
+                  </ul> -->
+                  <ul class="list list-bullet">
+                     <li>
+                        <p><span class="bold">Telephone:</span> 0300 330 9291 (this call will be charged at a local rate). Lines are available Monday to Friday from 8am to 6pm and Saturday from 9am to 3pm.</p>
+                     </li>
+                     <li>
+                        <p><span class="bold">Email:</span> <a href="mailto:nhsbsa.pecs@nhsbsa.nhs.uk">nhsbsa.pecs@nhsbsa.nhs.uk</a></p>
+                     </li>
+                  </ul>
+                  <h3 class="heading-small">For dental treatment</h3>
+                  <!-- <ul class="list list-bullet">
+                     <li>Call us on 0300 330 1293 (this call will be charged at a local rate). </li>
+                     <li>Email us at <a href="mailto:nhsbsa.decs@nhsbsa.nhs.uk">nhsbsa.decs@nhsbsa.nhs.uk</a></li>
+                  </ul> -->
+                  <ul class="list list-bullet">
+                     <li>
+                        <p><span class="bold">Telephone:</span> 0300 330 1293 (this call will be charged at a local rate). Lines are available Monday to Friday from 8am to 6pm and Saturday from 9am to 3pm.</p>
+                     </li>
+                     <li>
+                        <p><span class="bold">Email:</span> <a href="mailto:nhsbsa.decs@nhsbsa.nhs.uk">nhsbsa.decs@nhsbsa.nhs.uk</a></p>
+                     </li>
+                  </ul>
+               </div>
+            </details>
+            <br>
+            <form class="form" action="planInfo">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Continue">
+               </div>
+            </form>
+            <p class="navigation"><a class="cancel" href="#">Cancel</a></p>
+         </div>
+      </div>
+   </div>
+</main>
+{% endblock %}

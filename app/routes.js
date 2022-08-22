@@ -456,10 +456,10 @@ router.get(/dwp-new-handler/, function (req, res) {
 
         // PECS ENQUIRY JOURNEY
         router.get(/cert-number-ppc/, function (req, res) {
-        if (tax-credit === 'yes') {
+        if (req.query.tax-credit == 'yes') {
           res.redirect('/dwp-check-name-uc');
         }
-         else if (tax-credit === 'no') {
+         else if (req.query.tax-credit == 'no') {
          res.redirect('/dwp-did-you-bsa');;
          }
        });

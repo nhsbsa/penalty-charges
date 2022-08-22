@@ -451,16 +451,21 @@ router.get(/dwp-new-handler/, function (req, res) {
           });
         });
 
-        //router.get(/dwp-valid-uc/, function (req, res) {
-        //  if (req.query.details == 'yes') {
-        //    res.redirect('dwp-check-name-uc');
-        //  }
-          //else if (req.query.details == 'no') {
-           // res.redirect('dwp-did-you-bsa');
-         // }
-       // });
+
+
+
+        // PECS ENQUIRY JOURNEY
+        router.get(/cert-number-ppc/, function (req, res) {
+        if (tax-credit === 'yes') {
+          res.redirect('/dwp-check-name-uc');
+        }
+         else if (tax-credit === 'no') {
+         res.redirect('/dwp-did-you-bsa');;
+         }
+       });
         
        // PECS ENQUIRY JOURNEY 
+       //cert-number-ppc
 
       // router.get(/journeys/pecsenquiry/v1/dwp-were-you-claiming-isa, function (req, res) {
        // if (req.query.details == 'yes') {

@@ -460,6 +460,26 @@ router.get(/dwp-new-handler/, function (req, res) {
          // }
        // });
         
+       // PECS ENQUIRY JOURNEY 
+
+      // router.get(/journeys/pecsenquiry/v1/dwp-were-you-claiming-isa, function (req, res) {
+       // if (req.query.details == 'yes') {
+      //    res.redirect('dwp-update-address');
+        //}
+        //else if (req.query.details == 'no') {
+        //  res.redirect('dwp-did-you-bsa');
+       // }
+     // });
+
+     // router.get(/change-address/, function (req, res) {
+      //  if (req.query.details == 'yes') {
+       //   res.redirect('check-your-answers');
+      //  }
+      //  else if (req.query.details == 'no') {
+      //    res.redirect('update-address');
+     //   }
+     // });
+
     
 
 module.exports = router;

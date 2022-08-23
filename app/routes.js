@@ -485,6 +485,16 @@ router.get(/dwp-new-handler/, function (req, res) {
      //   }
      // });
 
-    
+// Postcode route
+router.get(/postcode-handler/, function (req, res) {
+  if (req.query.postcode == 'NE24XL') {
+    res.redirect('view-dwp-challenge-pecs-copy');
+  } else if (req.query.postcode == 'NE2 4XL') {
+    res.redirect('view-dwp-challenge-pecs-copy');;
+  }
+  else {
+    res.redirect('view-dwp-challenge-pecs');
+  }
+});  
 
 module.exports = router;

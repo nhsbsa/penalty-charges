@@ -471,7 +471,50 @@ router.get(/dwp-new-handler/, function (req, res) {
          res.redirect('dwp-did-you-bsa');;
          }
        });
+       router.get(/bsa-handler/, function (req, res) {
+        if (req.query.bsa == 'yes') {
+          res.redirect('dwp-check-name-uc');
+        }
+        else if (req.query.bsa == 'mat') {
+          res.redirect('dwp-check-name-uc');
+        }
+        else if (req.query.bsa == 'ppc') {
+          res.redirect('dwp-check-name-uc');
+        }
+         else if (req.query.bsa == 'med') {
+           res.redirect('dwp-check-name-uc');
+         }
+         else if (req.query.bsa== 'hc2') {
+           res.redirect('dwp-check-name-uc');
+         }
+         else if (req.query.bsa == 'tc') {
+           res.redirect('dwp-check-name-uc');
+         }
+         else if (req.query.bsa == 'no') {
+           res.redirect('dwp-exemptions-pecs');
+         }
+       });
+       router.get(/dwpexemptions-handler/, function (req, res) {
+        if (req.query.benefitsdwp == 'yes') {
+          res.redirect('dwp-check-name-uc');
+        }
+        else if (req.query.benefitsdwp == 'is') {
+          res.redirect('dwp-check-name-uc');
+        }
+        else if (req.query.benefitsdwp == 'jsa') {
+          res.redirect('dwp-check-name-uc');
+        }
+         else if (req.query.benefitsdwp == 'uc') {
+           res.redirect('dwp-check-name-uc');
+         }
+         else if (req.query.benefitsdwp == 'pc') {
+           res.redirect('dwp-check-name-uc');
+         }
         
+         else if (req.query.benefitsdwp == 'no') {
+           res.redirect('dwp-we-need-proof-pecs');
+         }
+       });
        router.get(/updatename/, function (req, res) {
         if (req.query.details == 'yes') {
           res.redirect('dwp-check-dob');
@@ -492,10 +535,10 @@ router.get(/dwp-new-handler/, function (req, res) {
 
        router.get(/checkaddress/, function (req, res) {
         if (req.query.detailsaddress == 'yes') {
-          res.redirect('dwp-check-address-pecs');
+          res.redirect('dwp-check-your-answers');
         }
          else if (req.query.detailsaddress == 'no') {
-         res.redirect('dwp-update-dob');;
+         res.redirect('dwp-update-address');;
          }
        });
 

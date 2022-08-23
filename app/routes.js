@@ -455,9 +455,9 @@ router.get(/dwp-new-handler/, function (req, res) {
 
 
         // PECS ENQUIRY JOURNEY
-        router.get(/cert-number-ppc/, function (req, res) {
+        router.get(/taxcredit-handler/, function (req, res) {
         if (req.query.tax-credit == 'yes') {
-          res.redirect('/dwp-check-name-uc');
+          res.redirect('/cert-number');
         }
          else if (req.query.tax-credit == 'no') {
          res.redirect('/dwp-did-you-bsa');;
@@ -487,13 +487,13 @@ router.get(/dwp-new-handler/, function (req, res) {
 
 // Postcode route
 router.get(/postcode-handler/, function (req, res) {
-  if (req.query.postcode == 'NE24XL') {
-    res.redirect('view-dwp-challenge-pecs-copy');
+  if (req.query.postcode == 'NE1 3JA') {
+    res.redirect('view-dwp-challenge-pecs');
   } else if (req.query.postcode == 'NE2 4XL') {
     res.redirect('view-dwp-challenge-pecs-copy');;
   }
   else {
-    res.redirect('view-dwp-challenge-pecs');
+    res.redirect('unable-to-confirm-id');
   }
 });  
 

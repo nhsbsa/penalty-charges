@@ -456,14 +456,49 @@ router.get(/dwp-new-handler/, function (req, res) {
 
         // PECS ENQUIRY JOURNEY
         router.get(/taxcredit-handler/, function (req, res) {
-        if (req.query.tax-credit == 'yes') {
-          res.redirect('/cert-number');
+        if (req.query.taxcredit == 'yes') {
+          res.redirect('cert-number');
         }
-         else if (req.query.tax-credit == 'no') {
-         res.redirect('/dwp-did-you-bsa');;
+         else if (req.query.taxcredit == 'no') {
+         res.redirect('dwp-did-you-bsa');;
+         }
+       });
+       router.get(/dwpclaiming-isa/, function (req, res) {
+        if (req.query.exemptionbenefit == 'yes') {
+          res.redirect('dwp-check-name-uc');
+        }
+         else if (req.query.exemptionbenefit == 'no') {
+         res.redirect('dwp-did-you-bsa');;
          }
        });
         
+       router.get(/updatename/, function (req, res) {
+        if (req.query.details == 'yes') {
+          res.redirect('dwp-check-dob');
+        }
+         else if (req.query.details == 'no') {
+         res.redirect('dwp-update-name');;
+         }
+       });
+
+       router.get(/checkdob/, function (req, res) {
+        if (req.query.detailsdob == 'yes') {
+          res.redirect('dwp-check-address-pecs');
+        }
+         else if (req.query.detailsdob == 'no') {
+         res.redirect('dwp-update-dob');;
+         }
+       });
+
+       router.get(/checkaddress/, function (req, res) {
+        if (req.query.detailsaddress == 'yes') {
+          res.redirect('dwp-check-address-pecs');
+        }
+         else if (req.query.detailsaddress == 'no') {
+         res.redirect('dwp-update-dob');;
+         }
+       });
+
        // PECS ENQUIRY JOURNEY 
        //cert-number-ppc
 

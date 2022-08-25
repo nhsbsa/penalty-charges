@@ -888,4 +888,224 @@ res.redirect('unable-to-confirm-id');
 });  
 
 
+//////////////////////
+// DECS SC JOURNEY //
+//////////////////////
+
+
+router.get(/taxcredit-handler-pcn-decs/, function (req, res) {
+  if (req.query.taxcredit == 'yes') {
+    res.redirect('cert-number');
+  }
+   else if (req.query.taxcredit == 'no') {
+   res.redirect('dwp-did-you-bsa');;
+   }
+ });
+ router.get(/dwpclaiming-isa-pcn-decs/, function (req, res) {
+  if (req.query.exemptionbenefit == 'yes') {
+    res.redirect('dwp-check-name-uc');
+  }
+   else if (req.query.exemptionbenefit == 'no') {
+   res.redirect('dwp-did-you-bsa');;
+   }
+ });
+ router.get(/bsa-pcndecs/, function (req, res) {
+  if (req.query.bsa == 'yes') {
+    res.redirect('dwp-check-name-uc');
+  }
+  else if (req.query.bsa == 'mat') {
+    res.redirect('dwp-check-name-uc');
+  }
+  else if (req.query.bsa == 'ppc') {
+    res.redirect('dwp-check-name-uc');
+  }
+   else if (req.query.bsa == 'med') {
+     res.redirect('dwp-check-name-uc');
+   }
+   else if (req.query.bsa== 'hc2') {
+     res.redirect('dwp-check-name-uc');
+   }
+   else if (req.query.bsa == 'tc') {
+     res.redirect('dwp-check-name-uc');
+   }
+   else if (req.query.bsa == 'no') {
+     res.redirect('dwp-exemptions-decs');
+   }
+ });
+
+ router.get(/dwpexemptions-decs-pcn/, function (req, res) {
+  if (req.query.benefitsdwp == 'yes') {
+    res.redirect('dwp-check-name-uc');
+  }
+  else if (req.query.benefitsdwp == 'is') {
+    res.redirect('dwp-check-name-uc');
+  }
+  else if (req.query.benefitsdwp == 'jsa') {
+    res.redirect('dwp-check-name-uc');
+  }
+   else if (req.query.benefitsdwp == 'uc') {
+     res.redirect('dwp-check-name-uc');
+   }
+   else if (req.query.benefitsdwp == 'pc') {
+     res.redirect('dwp-check-name-uc');
+   }
+  
+   else if (req.query.benefitsdwp == 'no') {
+     res.redirect('cant-find-cert-decs');
+   }
+ });
+
+
+
+ router.get(/updatename-pcn-decs/, function (req, res) {
+  if (req.query.details == 'yes') {
+    res.redirect('dwp-check-dob');
+  }
+   else if (req.query.details == 'no') {
+   res.redirect('dwp-update-name');;
+   }
+ });
+
+ router.get(/dob-pcn-decs/, function (req, res) {
+  if (req.query.detailsdob == 'yes') {
+    res.redirect('dwp-check-address-decs');
+  }
+   else if (req.query.detailsdob == 'no') {
+   res.redirect('dwp-update-dob');;
+   }
+ });
+
+ router.get(/address-decs-pcn/, function (req, res) {
+  if (req.query.detailsaddressdecs == 'yes') {
+    res.redirect('dwp-check-your-answers');
+  }
+   else if (req.query.detailsaddressdecs == 'no') {
+   res.redirect('dwp-update-address-uc-decs');;
+   }
+ });
+
+ 
+
+// Postcode route
+router.get(/postcode-pcn-decs/, function (req, res) {
+if (req.query.postcode == 'NE1 3JA') {
+res.redirect('penalty-view-decs');
+} else if (req.query.postcode == 'NE2 4XL') {
+res.redirect('penalty-view-decs-copy');;
+}
+else {
+res.redirect('unable-to-confirm-id');
+}
+}); 
+
+
+
+//////////////////////
+// PECS SC JOURNEY //
+//////////////////////
+
+
+router.get(/taxcredit-handler-sc/, function (req, res) {
+  if (req.query.taxcredit == 'yes') {
+    res.redirect('cert-number');
+  }
+   else if (req.query.taxcredit == 'no') {
+   res.redirect('dwp-did-you-bsa');;
+   }
+ });
+ router.get(/dwpclaiming-isa-sc/, function (req, res) {
+  if (req.query.exemptionbenefit == 'yes') {
+    res.redirect('dwp-check-name-uc');
+  }
+   else if (req.query.exemptionbenefit == 'no') {
+   res.redirect('dwp-did-you-bsa');;
+   }
+ });
+ router.get(/bsa-handler-sc/, function (req, res) {
+  if (req.query.bsa == 'yes') {
+    res.redirect('dwp-check-name-uc');
+  }
+  else if (req.query.bsa == 'mat') {
+    res.redirect('dwp-check-name-uc');
+  }
+  else if (req.query.bsa == 'ppc') {
+    res.redirect('dwp-check-name-uc');
+  }
+   else if (req.query.bsa == 'med') {
+     res.redirect('dwp-check-name-uc');
+   }
+   else if (req.query.bsa== 'hc2') {
+     res.redirect('dwp-check-name-uc');
+   }
+   else if (req.query.bsa == 'tc') {
+     res.redirect('dwp-check-name-uc');
+   }
+   else if (req.query.bsa == 'no') {
+     res.redirect('dwp-exemptions-pecs-sc');
+   }
+ });
+ router.get(/dwpexemptions-sc/, function (req, res) {
+  if (req.query.benefitsdwp == 'yes') {
+    res.redirect('dwp-check-name-uc');
+  }
+  else if (req.query.benefitsdwp == 'is') {
+    res.redirect('dwp-check-name-uc');
+  }
+  else if (req.query.benefitsdwp == 'jsa') {
+    res.redirect('dwp-check-name-uc');
+  }
+   else if (req.query.benefitsdwp == 'uc') {
+     res.redirect('dwp-check-name-uc');
+   }
+   else if (req.query.benefitsdwp == 'pc') {
+     res.redirect('dwp-check-name-uc');
+   }
+  
+   else if (req.query.benefitsdwp == 'no') {
+     res.redirect('cant-find-cert-pecs');
+   }
+ });
+ router.get(/updatename-sc/, function (req, res) {
+  if (req.query.details == 'yes') {
+    res.redirect('dwp-check-dob');
+  }
+   else if (req.query.details == 'no') {
+   res.redirect('dwp-update-name');;
+   }
+ });
+
+ router.get(/checkdob-sc/, function (req, res) {
+  if (req.query.detailsdob == 'yes') {
+    res.redirect('dwp-check-address-pecs-sc');
+  }
+   else if (req.query.detailsdob == 'no') {
+   res.redirect('dwp-update-dob');;
+   }
+ });
+
+ router.get(/checkaddress-sc/, function (req, res) {
+  if (req.query.detailsaddress == 'yes') {
+    res.redirect('dwp-check-your-answers');
+  }
+   else if (req.query.detailsaddress == 'no') {
+   res.redirect('dwp-update-address-uc-pecs-sc');;
+   }
+ });
+
+ 
+
+// Postcode route
+router.get(/postcodehandler-sc/, function (req, res) {
+if (req.query.postcode == 'NE1 3JA') {
+res.redirect('penalty-view-pecs-sc');
+} else if (req.query.postcode == 'NE2 4XL') {
+res.redirect('penalty-view-pecs-copy-sc');;
+}
+else {
+res.redirect('unable-to-confirm-id');
+}
+});  
+
+
+
 module.exports = router;

@@ -855,7 +855,7 @@ router.get(/taxcredit-handler-pcn-decs/, function (req, res) {
    }
  });
 
- router.get(/checkdob-pcn-decs/, function (req, res) {
+ router.get(/dob-pcn-decs/, function (req, res) {
   if (req.query.detailsdob == 'yes') {
     res.redirect('dwp-check-address-decs');
   }
@@ -864,7 +864,7 @@ router.get(/taxcredit-handler-pcn-decs/, function (req, res) {
    }
  });
 
- router.get(/checkaddress-decs-pcn/, function (req, res) {
+ router.get(/address-decs-pcn/, function (req, res) {
   if (req.query.detailsaddressdecs == 'yes') {
     res.redirect('dwp-check-your-answers');
   }

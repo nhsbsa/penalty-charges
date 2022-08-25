@@ -563,7 +563,7 @@ router.get(/postcode-handler/, function (req, res) {
 
 
 //////////////////
-// DECS JOURNEY //
+// DECS ENQUIRY JOURNEY //
 //////////////////
 
 router.get(/taxcredit-handler-copy/, function (req, res) {
@@ -635,11 +635,11 @@ router.get(/taxcredit-handler-copy/, function (req, res) {
    }
  });
 
- router.get(/checkdob-copy/, function (req, res) {
-  if (req.query.detailsdob == 'yes') {
+ router.get(/checkdob-copydecs/, function (req, res) {
+  if (req.query.detailsdobdecs == 'yes') {
     res.redirect('dwp-check-address-decs');
   }
-   else if (req.query.detailsdob == 'no') {
+   else if (req.query.detailsdobdecs == 'no') {
    res.redirect('dwp-update-dob');;
    }
  });

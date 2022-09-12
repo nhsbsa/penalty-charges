@@ -582,7 +582,7 @@ router.get(/taxcredit-handler-copy/, function (req, res) {
    res.redirect('dwp-did-you-bsa');;
    }
  });
- router.get(/bsa-handler-copy/, function (req, res) {
+ router.get(/bsa-decs-enquirynhs/, function (req, res) {
   if (req.query.bsa == 'yes') {
     res.redirect('dwp-check-name-uc');
   }
@@ -605,6 +605,7 @@ router.get(/taxcredit-handler-copy/, function (req, res) {
      res.redirect('dwp-exemptions-decs');
    }
  });
+
  router.get(/dwpexemptions-handler-copy/, function (req, res) {
   if (req.query.benefitsdwp == 'yes') {
     res.redirect('dwp-check-name-uc');

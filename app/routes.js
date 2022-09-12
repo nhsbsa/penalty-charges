@@ -606,7 +606,7 @@ router.get(/taxcredit-handler-copy/, function (req, res) {
    }
  });
 
- router.get(/dwpexemptions-handler-copy/, function (req, res) {
+ router.get(/exemptions-decsenquiry-decs/, function (req, res) {
   if (req.query.benefitsdwp == 'yes') {
     res.redirect('dwp-check-name-uc');
   }
@@ -626,6 +626,8 @@ router.get(/taxcredit-handler-copy/, function (req, res) {
    else if (req.query.benefitsdwp == 'no') {
      res.redirect('dwp-we-need-proof-decs');
    }
+
+  
  });
  router.get(/updatename-copy/, function (req, res) {
   if (req.query.details == 'yes') {
@@ -636,11 +638,11 @@ router.get(/taxcredit-handler-copy/, function (req, res) {
    }
  });
 
- router.get(/checkdob-copydecs/, function (req, res) {
-  if (req.query.detailsdobdecs == 'yes') {
+ router.get(/your-dob/, function (req, res) {
+  if (req.query.dobdecsenquiry == 'yes') {
     res.redirect('dwp-check-address-decs');
   }
-   else if (req.query.detailsdobdecs == 'no') {
+   else if (req.query.dobdecsenquiry == 'no') {
    res.redirect('dwp-update-dob');;
    }
  });

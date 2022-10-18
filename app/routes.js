@@ -896,7 +896,7 @@ res.redirect('unable-to-confirm-id');
 //////////////////////
 
 
-router.get(/taxcredit-handler-pcn-decs/, function (req, res) {
+router.get(/taxcredit-handler-sc-decs/, function (req, res) {
   if (req.query.taxcredit == 'yes') {
     res.redirect('cert-number');
   }
@@ -904,7 +904,7 @@ router.get(/taxcredit-handler-pcn-decs/, function (req, res) {
    res.redirect('dwp-did-you-bsa');;
    }
  });
- router.get(/dwpclaiming-isa-pcn-decs/, function (req, res) {
+ router.get(/dwpclaiming-isa-sc-decs/, function (req, res) {
   if (req.query.exemptionbenefit == 'yes') {
     res.redirect('dwp-check-name-uc');
   }
@@ -912,7 +912,7 @@ router.get(/taxcredit-handler-pcn-decs/, function (req, res) {
    res.redirect('dwp-did-you-bsa');;
    }
  });
- router.get(/bsa-pcndecs/, function (req, res) {
+ router.get(/bsa-scdecs/, function (req, res) {
   if (req.query.bsa == 'yes') {
     res.redirect('dwp-check-name-uc');
   }
@@ -936,7 +936,7 @@ router.get(/taxcredit-handler-pcn-decs/, function (req, res) {
    }
  });
 
- router.get(/dwpexemptions-decs-pcn/, function (req, res) {
+ router.get(/dwpexemptions-decs-sc/, function (req, res) {
   if (req.query.benefitsdwp == 'yes') {
     res.redirect('dwp-check-name-uc');
   }
@@ -960,7 +960,7 @@ router.get(/taxcredit-handler-pcn-decs/, function (req, res) {
 
 
 
- router.get(/updatename-pcn-decs/, function (req, res) {
+ router.get(/updatename-sc-decs/, function (req, res) {
   if (req.query.details == 'yes') {
     res.redirect('dwp-check-dob');
   }
@@ -969,7 +969,7 @@ router.get(/taxcredit-handler-pcn-decs/, function (req, res) {
    }
  });
 
- router.get(/dob-pcn-decs/, function (req, res) {
+ router.get(/dob-sc-decs/, function (req, res) {
   if (req.query.detailsdob == 'yes') {
     res.redirect('dwp-check-address-decs');
   }
@@ -978,7 +978,7 @@ router.get(/taxcredit-handler-pcn-decs/, function (req, res) {
    }
  });
 
- router.get(/address-decs-pcn/, function (req, res) {
+ router.get(/address-decs-sc/, function (req, res) {
   if (req.query.detailsaddressdecs == 'yes') {
     res.redirect('dwp-check-your-answers');
   }
@@ -990,7 +990,7 @@ router.get(/taxcredit-handler-pcn-decs/, function (req, res) {
  
 
 // Postcode route
-router.get(/postcode-pcn-decs/, function (req, res) {
+router.get(/postcode-sc-decs/, function (req, res) {
 if (req.query.postcode == 'NE1 3JA') {
 res.redirect('penalty-view-decs');
 } else if (req.query.postcode == 'NE2 4XL') {
@@ -1044,7 +1044,7 @@ router.get(/taxcredit-handler-sc/, function (req, res) {
      res.redirect('dwp-check-name-uc');
    }
    else if (req.query.bsa == 'no') {
-     res.redirect('dwp-exemptions-pecs-sc');
+     res.redirect('dwp-exemptions-pecs');
    }
  });
  router.get(/dwpexemptions-sc/, function (req, res) {
@@ -1100,9 +1100,9 @@ router.get(/taxcredit-handler-sc/, function (req, res) {
 // Postcode route
 router.get(/postcodehandler-sc/, function (req, res) {
 if (req.query.postcode == 'NE1 3JA') {
-res.redirect('penalty-view-pecs-sc');
+res.redirect('penalty-view-pecs');
 } else if (req.query.postcode == 'NE2 4XL') {
-res.redirect('penalty-view-pecs-copy-sc');;
+res.redirect('penalty-view-pecs-copy');;
 }
 else {
 res.redirect('unable-to-confirm-id');
